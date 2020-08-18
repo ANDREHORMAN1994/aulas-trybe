@@ -1,0 +1,53 @@
+Fonte: https://www.escolalinux.com.br/blog/8-motivos-para-voce-aprender-shell-script
+
+8 motivos para você aprender shell script!
+------------------------------------------
+
+O Shell Script é uma ferramenta muito poderosa utilizada na automação de instrução onde, através um arquivo .txt executável, o usuário ou até mesmo o sistema pode executar uma operação ou uma sequência de operações, instruções ou até mesmo testes.
+
+O uso mais convencional do Shell Script é executável para instalação/configuração ou geração de dados para criação de relatórios. Tratamos essa ferramenta como poderosa pois qualquer sequência de instruções que sejam realizadas com regularidade que possa ser automatizada, pode ser implementada com Shell Script. Saiba mais!
+
+Por que o Shell Script é tão valorizado?
+----------------------------------------
+
+A facilidade que o Shell Script promove na vida do usuário e também do administrador do sistema faz com que ele seja muito valorizado. Qualquer automatização de tarefas agiliza a velocidade da entrega e ainda agrega confiabilidade ao processo, que antes poderia conter erros por ser 100% manual. Você não precisa mais copiar e colar 50 vezes o e-mail para todos os destinatários de um e-mail ou ainda utilizar mala direta para realizar essa tarefa, você pode simples utilizar o Shell Script para:
+
+- Criar um arquivo .txt para enviar a mensagem com assinatura;
+- Criar um arquivo .txt com os nomes de todos os destinatários;
+- Criar um script que realiza a leitura dos nomes um por um do arquivo e depois coloca a mensagem do arquivo .txt, e depois utilizar a função “Enviar E-mail”.
+
+
+8 motivos para você aprender Shell Script
+-----------------------------------------
+
+#1 Diversas partes de uma distribuição Linux usam Shell Script, como:
+
+	a) Sistemas de empacotamento: scripts utilizados para criação de pacotes;
+
+	b) Init systems: utilizam o shell script para controle dos serviços;
+
+	c) Grub: Os arquivos de boot são Shell Script;
+
+A lista é bem extensa, esses foram apenas alguns exemplos.
+
+#2 Novos conceitos foram criados, mas o uso do Shell Script não saiu de “moda”: as tecnologias evoluíram bastante, o tempo passou, alguns conceitos de computação sofreram alteração, porém o Shell Script segue firme e forte.
+
+#3 Alta valorização no mercado de trabalho: A demanda por profissionais que sejam aptos a atuar com as diversas tecnologias que surgiram, como Docker e OpenStack são altas, porém eles também procuram pelos profissionais que conhecem Shell Script, você sabe porquê?
+
+	a) Docker: Você utiliza Shell Script dentro do arquivo que realiza a definição de um container;
+
+	B) OpenStack: Você consegue executar o script do Shell ainda no primeiro boot da máquina virtual;
+
+#4 Conhecer Shell Script ajuda no seu conhecimento de modo interativo: Existem dois modos que o Bash pode ser executado, em modo interativo (linha de comando) e no modo não interativo (script). Existem diversas formas diferentes para executar uma mesma tarefa, e essa das partes mais fascinantes do Shell.
+
+#5 Ter um currículo de peso: Qualquer profissional que tenha a intenção de trabalhar com Linux, precisa ter um alto domínio sobre Shell Script. Você pode atuar nas mais variadas áreas, mas você precisará interpretar Shells criados por outras pessoas e criar seus próprios Scripts. Existem vagas de emprego direcionadas para profissionais que tenham Shell no currículo.
+
+#6 Shell Script também é diversão: Pode soar estranho, mas é divertido e prazeroso você ver uma tarefa que antes era executada manualmente, ser realizada pelo seu script, com sua a lógica e do seu jeito. Você fica orgulhoso pela sua criação e no momento em que está criando, você também está se divertindo.
+
+#7 Progressão Promissora da Carreira: Enquanto a demanda continua a crescer para o talento de scripts em shell, ainda existe uma escassez de profissionais experientes no mercado. Existem oportunidades ilimitadas de progressão na carreira para pessoas desenvolvedoras e administradoras de sistemas qualificados.
+
+#8 Crescimento salarial: Pessoas capacitadas e que possuem a habilidade de trabalhar com Shell Script são muito valorizadas no mercado, conseguem boas propostas de emprego e para elas não faltam vagas.
+
+#9 Desenvolver dominio da linguagem
+
+#10 MUITO IMPORTANTE APRENDER
