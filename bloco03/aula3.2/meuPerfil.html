@@ -4,6 +4,46 @@
 <head>
     <meta charset="utf-8">
     <title>MEU PRIMEIRO HTML</title>
+    <style>
+        h1 {
+            color: green;
+            font-family: monospace;
+            font-size: 4em;
+        }
+
+        h3 {
+            color: rgb(130, 252, 119);
+        }
+
+        h4 {
+            color: rgb(107, 255, 144);
+        }
+
+        a {
+            color: blue;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: cursive;
+        }
+
+        #topo {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .final-site {
+            background-color: white;
+            color: black;
+            font-family: monospace;
+            font-size: 18px;
+        }
+
+        .lista {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +62,7 @@
     Estudante <strong>Trybe</strong> | <em>Turma 07 - Faca e Queijo !!</em>
 
     <h4> REDES SOCIAIS </h4>
-    <ul>
+    <ul class="lista">
         <li> <a target="_blank" href="https://github.com/ANDREHORMAN1994"> ACESSE MEU GITHUB </a> </li>
         <li> <a target="_blank" href="https://www.linkedin.com/in/andrehorman/"> ACESSE MEU LINKEDIN </a> </li>
     </ul>
@@ -36,23 +76,23 @@
     <hr>
 
     <h4> COMPONENTES DE UM SITE </h4>
-    <ul> <em>
+    <ul class="lista"> <em>
             <li> HTML; </li>
             <li> CSS ; </li>
             <li> JAVASCRIPT ;</li>
-        </em> 
+        </em>
     </ul>
     <hr>
 
     <h4 id="obs"> Observações Importantes </h4>
-    <ol> <strong>
+    <ol class="lista"> <strong>
             <li> JS é linguagem de Progamação </li>
             <li> HTML e CSS é linguagem de Marcação, tags </li>
-        </strong> 
+        </strong>
     </ol>
-
-    <h4> “Código limpo é aquele escrito por alguém que se preocupa” - Michael Feathers </h4>
-    <h3> <a href="#topo">VOLTAR AO TOPO</a> </h3>
+    <hr>
+    <h4 class="final-site"> “Código limpo é aquele escrito por alguém que se preocupa” - Michael Feathers </h4>
+    <h3> <a class="final-site" href="#topo">VOLTAR AO TOPO</a> </h3>
 </body>
 
 </html>
