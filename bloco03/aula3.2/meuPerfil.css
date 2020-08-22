@@ -1,38 +1,43 @@
 /* AQUI COMEÇA A PARTE DE CSS */
+@import url('https://fonts.google.com/specimen/Open+Sans?query=open+sans');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+}
 
 h1 {
- background-color: white;
- color: green;
- font-family: monospace;
- font-size: 4em;
- 
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: green;
+  font-family: monospace;
+  font-size: 4em;
+  text-align: center;
 }
 
 h3 {
- color: rgb(130, 252, 119);
+  color: rgb(130, 252, 119);
 }
 
 h4 {
- color: rgb(107, 255, 144);
+  color: rgb(107, 255, 144);
 }
 
 a {
- color: blue;
-}
-
-body {
- background-color: black;
- color: white;
- font-family: cursive;
+  color: blue;
 }
 
 .final-site {
- background-color: white;
- color: black;
- font-family: monospace;
- font-size: 18px;
+  background-color: white;
+  color: black;
+  font-family: monospace;
+  font-size: 18px;
 }
 
 .lista {
- color: red;
+  color: red;
 }
