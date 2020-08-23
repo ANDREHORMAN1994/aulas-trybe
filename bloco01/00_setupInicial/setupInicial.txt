@@ -1,0 +1,38 @@
+Checklist de software
+
+A seguir, temos uma lista com as principais ferramentas que vamos utilizar ao longo do curso.
+
+É imprescindível que você tenha todas elas instaladas e funcionando corretamente em seu computador para um bom aproveitamento do curso.
+
+	VS Code
+Escolhemos o VS Code, pois, além de ser gratuito, é open source e possui plugins incríveis que vão te ajudar ao longo do curso.
+
+	Google Chrome
+É o navegador mais utilizado da web desde 2012 e possui ótimas ferramentas para auxiliar a pessoa desenvolvedora web.
+	
+	Zoom
+É uma das ferramentas de videoconferência mais bem avaliadas do mercado e possui ótima performance e consistência, além de oferecer funções colaborativas que vamos usar ao longo do curso.
+	
+	Slack
+É uma ferramenta poderosa de comunicação assíncrona, que substitui e-mail, mensagem de texto e mensagem instantânea de uma vez. É onde você fará a maior parte das comunicações ao longo do curso.
+
+
+	Spotify
+Ótima ferramenta para ouvir música, e é gratuita apesar dos anúncios
+
+
+Checklist de Hardware
+
+Durante o curso, a maioria das atividades que você vai desempenhar serão realizadas no seu próprio computador. Para que isso ocorra de forma eficiente, acreditamos que o computador deverá ter uma configuração de hardware parecida com a especificação abaixo:
+
+Processador com pelo menos dois cores
+
+Pelo menos 4GB de RAM
+
+Pelo menos 120GB de HD
+
+Conectividade com rede Wi-Fi
+
+Conectividade com fones de ouvido e microfone
+
+Webcam
