@@ -4,8 +4,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(215, 255, 182);
   font-family: "Open Sans", sans-serif;
+  background-color: rgb(27, 27, 27);
 }
 
 h1 {
@@ -33,6 +33,7 @@ h3 {
   font-size: 15px;
   text-align: center;
   text-decoration: none;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.308);
 
   color: white;
   background-color: #11a36a;
@@ -45,7 +46,12 @@ h3 {
   border-radius: 20px;
   position: absolute;
   top: 5px;
-  left: 10%;
+  left: 20%;
+}
+
+#botao1:hover {
+  color: black;
+  background-color: #005534;
 }
 
 .grupo1 {
@@ -119,7 +125,12 @@ img {
   border-radius: 20px;
   position: absolute;
   top: 630px;
-  left: 33%;
+  left: 28%;
+}
+
+.meus-links-redes:hover{
+  color: black;
+  background-color: #005534;
 }
 
 .meus-links-redes2 {
@@ -136,22 +147,65 @@ img {
 
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 160px;
+  width: 200px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
   position: absolute;
   top: 630px;
-  left: 52%;
+  left: 58%;
 }
 
-#linksprincipais {
+.meus-links-redes2:hover{
+  color: black;
+  background-color: #005534;
+}
+
+.componentes {
+  position: relative;
+  margin-top: 10%;
+  left: 20%;
+  line-height: 20px;
+}
+
+#hard-skills {
   color: white;
-  background-color: black;
+  margin-left: 30px;
 }
 
-h2 {
+.observacoes-importantes {
+  position: absolute;
+  top: 740px;
+  left: 50%;
+  line-height: 25px;
+}
+
+#soft-skills {
+  color: white;
+  margin-left: 20px;
+}
+
+.grupo3 {
+  display: block;
+  padding: 10px;
+  background-color: #11a36a;
+}
+
+#meucorpohtml {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.referencia {
+  color: white;
   text-align: center;
+}
+
+#citacao-autor {
+  font-weight: bold;
   color: #11a36a;
-  margin: 0;
-  padding: 0;
+}
+
+#botao2 {
+  color: white;
+  text-decoration: none;
 }
