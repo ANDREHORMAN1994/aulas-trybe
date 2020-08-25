@@ -2,7 +2,8 @@
 
 O objetivo deste primeiro módulo é dar os primeiros passos (com muita prática) ao mundo do Desenvolvimento Web.
 
-Nesse módulo aprendi sobre `UNIX e SHELL`, `SHELL SCRIPT`, `GIT e GITHUB`, `Entendimento WEB - CLIENTE e SERVIDOR` e `HTML, CSS e JS` 
+Nesse módulo estudei os fundamentos de como funciona a internet, quais são as peças principais e como elas se encaixam.
+Aprendi sobre `UNIX e SHELL`, `SHELL SCRIPT`, `GIT e GITHUB`, `Entendimento WEB - CLIENTE e SERVIDOR` e `HTML, CSS e JS` 
 
 Sendo Capaz de:
 
