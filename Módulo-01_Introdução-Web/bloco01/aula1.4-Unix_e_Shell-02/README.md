@@ -1,4 +1,6 @@
-Exercícios
+# Exercícios
+
+## Aula 1.4 - Unix e Shell Parte-02
 Tempo sugerido para realização: 90 minutos
 É hora de colocar a mão na massa. 💪🏼
 
@@ -27,6 +29,7 @@ Navegue até a pasta unix_tests;
 
 	10 Ordene o arquivo bunch_of_things.txt.
 
+
 Parte II - Permissões
 	
 	11 Navegue até a pasta unix_tests;
@@ -41,9 +44,10 @@ Parte II - Permissões
 
 	16 Resultado esperado: -r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
 
-	17 Volte à permissão do arquivo bunch_of_things.txt para a listada inicialmente utilizando o comando chmod 644 		bunch_of_things.txt. Leia este artigo para entender mais sobre o que é e como funciona essa numeração 644.
+	17 Volte à permissão do arquivo bunch_of_things.txt para a listada inicialmente utilizando o comando chmod 644 bunch_of_things.txt.
 
 	18 Resultado esperado: -rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
+
 
 Parte III - Processos & Jobs
 Liste todos os processos;
@@ -68,6 +72,7 @@ Liste todos os processos;
 
 	28 Termine a execução de todos os processos sleep (mate os processos).
 
+
 (Bônus) - Parte IV - O despertar do terminal
 
 E pra terminar com a energia óh, lá no alto, que tal aprender agora alguns comandos divertidos do UNIX? ☝ 🎊
@@ -88,6 +93,7 @@ Leia este artigo para fazer os exercícios de aquecimento abaixo
 	Veja como fica a sua sorte do dia ao contrário. Dica: utilize o comando rev.
 
 	Execute o comando telnet towel.blinkenlights.nl e espere alguns segundos. Lembre-se que você tem mais exercícios para fazer! 😅
+
 
 Recapitulando...
 Agora que você passou um bom tempo estudando sobre o Unix e seus comandos, sabemos que você já entende que:

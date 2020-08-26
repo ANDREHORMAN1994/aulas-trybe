@@ -1,6 +1,6 @@
 # Exercícios
 
-## Aula 1.3 - Unix e Shell
+## Aula 1.3 - Unix e Shell Parte-01
 Tempo sugerido para realização: 60 minutos
 
 Parte I - Criação de arquivos e diretórios
