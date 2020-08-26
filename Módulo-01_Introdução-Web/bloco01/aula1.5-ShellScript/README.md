@@ -10,6 +10,7 @@ Você vai criar vários scripts em Shell. Procure discutir a solução com a sua
 Dessa vez, o gabarito está disponível escondido junto com exercício, mas resista à tentação de abri-lo ao máximo, pelo menos até a dupla ter conseguido desenvolver o exercício por conta própria! 🤜🏼🤛🏼
 
 ⚠️ Não se esqueça de executar cada um dos scripts, testá-los de diferentes formas e analisar o resultado após cada teste! 🔎
+	
 	1. Escreva um Shell Script que imprima na tela a frase: "Shell Script é demais!";
 	
 	2. Modifique o Shell Script do exercício anterior para incluir uma variável. A variável deverá receber o conteúdo da mensagem: "Shell Script com variáveis é demais!";
