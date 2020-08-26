@@ -1,8 +1,9 @@
-# Exercícios
+# Exercícios :white_check_mark:
 
 ## Aula 2.3 - Entendendo a WEB
-Dinâmica com Post-its
 Tempo sugerido para realização: 60 minutos
+
+Dinâmica com Post-its
 
 Agora você irá se juntar aos seus colegas, em grupos, para fazer uma dinâmica de forma bem interativa! 🎎
 

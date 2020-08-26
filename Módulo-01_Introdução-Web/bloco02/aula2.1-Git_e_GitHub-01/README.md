@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios :white_check_mark:
 
 ## Aula 2.1 - Git e GitHub Parte-01
 Parte 1 - Instalação e configurando;

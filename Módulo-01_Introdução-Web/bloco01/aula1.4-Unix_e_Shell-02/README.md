@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios :white_check_mark:
 
 ## Aula 1.4 - Unix e Shell Parte-02
 Tempo sugerido para realização: 90 minutos

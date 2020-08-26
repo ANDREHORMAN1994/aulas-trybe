@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios :white_check_mark:
 
 ## Aula 1.3 - Unix e Shell Parte-01
 Tempo sugerido para realização: 60 minutos

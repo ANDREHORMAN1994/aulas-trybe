@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios :white_check_mark:
 
 ## Aula 1.5 - ShellScript
 Tempo sugerido para realização: 150 minutos

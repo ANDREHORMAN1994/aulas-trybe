@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios :white_check_mark:
 
 ## Aula 2.2 - Git e Github Parte-02
 Tempo sugerido para realização: 140 minutos
