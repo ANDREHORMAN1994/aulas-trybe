@@ -1,5 +1,6 @@
-Exercícios
+# Exercícios
 
+## Aula 1.5 - ShellScript
 Tempo sugerido para realização: 150 minutos
 Chegou a hora de colocar a mão na massa! 🥖
 
@@ -23,7 +24,9 @@ Dessa vez, o gabarito está disponível escondido junto com exercício, mas resi
 	
 	7. Escreva um Shell Script que receba um diretório como argumento (ou parâmetro). Se o argumento não for um diretório, mostre a mensagem: "O argumento _ não é um diretório!". Se o argumento for um diretório, conte quantos arquivos existem nele e mostre a seguinte mensagem: "O _ tem _ arquivos.", em que você deve substituir os "_" pelo diretório e a quantidade de arquivos nele, respectivamente.
 
+
 Bônus
+
 Os exercícios a seguir exigem uma estrutura que vocês ainda não conhecem, o FOR, para realizá-los pesquise nos recursos adicionais como utilizar o FOR no Shell Script.
 
 	1. Escreva um Shell Script que imprima as palavras "shell", "script", "usando", "estrutura", "repetição", "for", "terminal" na tela, uma palavra por linha. Tente fazer isso usando o menor número de comandos possível.
