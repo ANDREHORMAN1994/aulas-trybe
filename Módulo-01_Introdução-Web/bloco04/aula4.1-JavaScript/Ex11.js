@@ -15,7 +15,7 @@
 // De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 // Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
 
-let salario = 1500.10;
+let salario = 3000;
 let inss;
 // INSS
 if (salario <= 1556.94) {
@@ -31,6 +31,17 @@ if (salario <= 1556.94) {
 let salarioBase = salario - inss;
 console.log (`Seu salário Base é "${salarioBase}`);
 
+let ir;
 if (salarioBase < 1903.98) {
   console.log ("Vc é Isento");
-} else if (salarioBase)
+} else if (salarioBase > 1903.98 && salarioBase <= 2826.65) {
+  console.log (`Seu IR é ${ir = salarioBase * 0.075 - 142.80}`)
+} else if (salarioBase > 2826.65 && salarioBase <= 3751.05) {
+  console.log (`Seu IR é ${ir = salarioBase * 0.15 - 354.80}`)
+} else if (salarioBase > 3751.05 && salarioBase <= 4664.68) {
+  console.log (`Seu IR é ${ir = salarioBase * 0.225 - 636.13}`)
+} else if (salarioBase > 4664.68) {
+  console.log (`Seu IR é ${ir = salarioBase * 0.275 - 869.36}`)
+}
+
+console.log (`Seu salário Líquido é ${salarioBase - ir}`)
