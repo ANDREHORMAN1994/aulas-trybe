@@ -1,0 +1,1 @@
+  let array = param1.split("");
