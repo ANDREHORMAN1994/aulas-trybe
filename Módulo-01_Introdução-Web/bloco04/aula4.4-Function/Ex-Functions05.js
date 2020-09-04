@@ -34,4 +34,4 @@ function repetido(array) {
   console.log(numberRepeat);
 }
 
-repetido([5, 4, 5, 2, 3, 2, 5, 5, 5, 8, 2, 3, 3, 5]);
+repetido([9, 1, 2, 3, 9, 5, 7]);
