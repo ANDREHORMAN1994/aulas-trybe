@@ -39,14 +39,6 @@
       </div>
     </div>
     <script>
-      /*
-        
-
- 
- 
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
 
       // EXERCÍCIO 01
 
@@ -88,6 +80,7 @@
 
         function mainColor (color) {
           let main = document.querySelector(".main-content");
+          main.style.backgroundColor = color;
           return main;
         }
         mainColor("blue");
@@ -117,6 +110,38 @@
           }
           correcaoH1("Exercício 5.1 - JavaScript");
 
+          // EXERCÍCIO 06
+
+          // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+            function toUpperCase () {
+              let maiusculo = document.querySelectorAll("p");
+              for(let i = 0; i < maiusculo.length; i += 1) {
+                maiusculo[i].innerHTML = maiusculo[i].innerHTML.toUpperCase();
+              }
+              return maiusculo;
+            }
+            toUpperCase();
+
+            // EXERCICIO 07
+
+            // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+              function exibe() {
+                let exibir = document.getElementsByTagName("p")
+                for(let i = 0; i < exibir.length; i += 1) {
+                  console.log(exibir[i].innerHTML)
+                }
+              }
+              exibe();
+
+              document.getElementsByTagName("p")[1].style.padding = "10px";
+              document.getElementsByClassName("center-content")[0].style.padding = "10px 50px";
+              document.getElementsByClassName("center-content")[0].style.margin = "30px";
+              document.getElementsByClassName("center-content")[0].style.margin = "auto";
+              document.getElementsByClassName("main-content")[0].style.padding = "10px 20px";
+              document.body.style.maxWidth = "80%";
+              document.body.style.margin = "auto";
         
     </script>
   </body>
