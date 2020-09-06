@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
+    <div class="main-content">
+      <div class="center-content" id="center">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+
+      // EXERCÍCIO 01
+
+      // Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+      // - document.getElementById()
+      // - document.getElementsByClassName()
+      // - document.getElementsByTagName()
+
+      let mainContent = document.getElementsByClassName("main-content");
+      mainContent[0].style.backgroundColor = "green";
+
+      let centerContent = document.getElementById("center");
+      centerContent.style.backgroundColor = "black";
+
+      let p = document.getElementsByTagName("p");
+      for (let i = 0; i < p.length; i += 1) {
+        p[i].style.color = "white";
+        p[i].style.textAlign = "center";
+      }
+
+      let divisao = document.querySelectorAll(".main-content p");
+      divisao[0].innerHTML =
+        "Aluno: André Horman <br> Turma 07 - Faca e Queijo";
+
+      // EXERCÍCIO 02
+
+      // Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+
+        function text (string) {
+          let textNew = document.querySelectorAll(".center-content p")
+          textNew[1].innerText = string
+          return textNew;
+        }
+        text("Daqui a 02 anos, pretendendo ter dominado esse bagulho e ter conseguido uma boa estabilidade, tanto profissional quanto pessoal.");
+
+        // EXERCÍCIO 03
+
+        // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+
+        function mainColor (color) {
+          let main = document.querySelector(".main-content");
+          main.style.backgroundColor = color;
+          return main;
+        }
+        mainColor("blue");
+
+        // EXERCÍCIO 04
+
+        // Crie uma função que mude a cor do quadrado vermelho para branco.
+
+        function centerColor (color, colorText) {
+          let center = document.querySelectorAll(".center-content");
+          let centerP = document.querySelectorAll(".center-content p")
+          center[0].style.backgroundColor = color;
+          for(let i = 0; i < centerP.length; i += 1)
+          centerP[i].style.color = colorText;
+          return center;
+        }
+        centerColor ("white","black");
+
+        // EXERCÍCIO 05
+
+        // Crie uma função que corrija o texto da tag <h1>.
+
+          function correcaoH1 (text) {
+            let titulo = document.querySelector("h1")
+            titulo.innerText = text;
+            return titulo;
+          }
+          correcaoH1("Exercício 5.1 - JavaScript");
+
+          // EXERCÍCIO 06
+
+          // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+            function toUpperCase () {
+              let maiusculo = document.querySelectorAll("p");
+              for(let i = 0; i < maiusculo.length; i += 1) {
+                maiusculo[i].innerHTML = maiusculo[i].innerHTML.toUpperCase();
+              }
+              return maiusculo;
+            }
+            toUpperCase();
+
+            // EXERCICIO 07
+
+            // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+              function exibe() {
+                let exibir = document.getElementsByTagName("p")
+                for(let i = 0; i < exibir.length; i += 1) {
+                  console.log(exibir[i].innerHTML)
+                }
+              }
+              exibe();
+
+              document.getElementsByTagName("p")[1].style.padding = "10px";
+              document.getElementsByClassName("center-content")[0].style.padding = "10px 50px";
+              document.getElementsByClassName("center-content")[0].style.margin = "30px";
+              document.getElementsByClassName("center-content")[0].style.margin = "auto";
+              document.getElementsByClassName("main-content")[0].style.padding = "10px 20px";
+              document.body.style.maxWidth = "80%";
+              document.body.style.margin = "auto";
+        
+    </script>
+  </body>
+</html>
