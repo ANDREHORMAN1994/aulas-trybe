@@ -1,4 +1,5 @@
 # Trybe
+#### André Horman de Medeiros Correia
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[André Horman](https://www.linkedin.com/in/andrehorman/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
