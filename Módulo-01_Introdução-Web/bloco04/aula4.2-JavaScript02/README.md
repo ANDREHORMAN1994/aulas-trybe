@@ -1,6 +1,4 @@
-# Agora a prática
-
-## Aula 4.2 - Array e FOR
+# Aula 4.2 - Array e FOR
 Agora a prática
 
 Leia atentamente os enunciados e faça o que se pede! Você irá utilizar esse array para realizar os exercícios do 1 ao 7:
