@@ -1,14 +1,14 @@
-# BLOCO 3 - HTML e CSS :white_check_mark:
+# BLOCO 4 - JavaScript :white_check_mark:
 
 Esse bloco pertence ao módulo de `Introdução ao Desenvolvimento Web` do curso da [Trybe](https://www.betrybe.com/). 
 
-##### Bloco 3: Introdução - HTML e CSS
+##### Bloco 4: Introdução - JavaScript
 
-- [X] 3-1: _HTML_
-- [X] 3-2: _CSS - Part 1_
-- [X] 3-3: _CSS - Part 2_
-- [X] 3-4: _HTML Semântico_
-- [X] 3-5: _PROJETO - HTML & CSS_
+- [X] 4-1: _Introdução ao JavaScript_
+- [X] 4-2: _Array e Loop For_
+- [X] 4-3: _Lógica de Programação_
+- [X] 4-4: _Objetos e Função_
+- [X] 4-5: _PROJETO - Functions_
 
 Tendo isso em mente aqui você encontrará os exercícios que desenvolvi nos dias respectivos,
 para fixar os conhecimentos que adquiri ao longo de cada bloco. 

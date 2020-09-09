@@ -78,7 +78,7 @@ Quando terminar os exercícios, seus códigos devem estar todos commitados na br
 
 Pra finalizar, crie um Pull Request , adicione uma descrição bem bacana, e envie para a monitoria e/ou colegas revisarem! 🤜🏼🤛🏼
 
-Agora a prática
+## Agora a prática
 
 Antes de fazer os exercícios, crie um arquivo HTML na pasta exercises/3_4 e copie o código abaixo:
 

@@ -18,4 +18,4 @@ para fixar os conhecimentos que adquiri ao longo de cada bloco.
 
 Além disso, também desenvolvi projetos ao final dos blocos para avaliar tudo o que havia aprendido.
 
-Você pode Acessar o projeto aqui: [...](linkProjetoDoBloco).
+Você pode Acessar meus projetos aqui: [PROJETOS](https://github.com/ANDREHORMAN1994/TRYBE-PROJETOS).

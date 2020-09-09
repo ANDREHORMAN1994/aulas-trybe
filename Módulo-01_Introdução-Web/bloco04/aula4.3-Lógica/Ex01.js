@@ -1,32 +1,41 @@
-// QUERO SABER QUAL NÚMERO MAIS SE REPETE NO ARRAY
+// QUESTÃO 01
 
-let array = [2, 11, 12, 11, 3, 5, 5, 11, 20, 2];
-console.log (`Esse é meu array = ${array}`);
+// 1- Para o primeiro exercício de hoje, faça um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. Por exemplo:
 
-let object = {};
-let arrayObject = [];
+// n = 5
 
-for (let i = 0; i < array.length; i += 1) {
-  if (object[array[i]] == undefined) {
-    object[array[i]] = 1;
-  } else if (object[array[i]] == object[array[i]]) {
-    object[array[i]] += 1;
+// *****
+// *****
+// *****
+// *****
+// *****
+
+let n;
+let symbol = "*";
+let array = [];
+
+// function question01(n) {
+//   // PRIMEIRO FOR = LINHA
+//   for (let i = 1; i <= n; i += 1) {
+//     array.push(symbol);
+//   }
+//   let joinArray = array.join("");
+//   // PRIMEIRO FOR = COLUNA
+//   for (let i = 1; i <= n; i += 1) {
+//     console.log(joinArray);
+//   }
+// }
+// question01(5);
+
+let newSymbol = "";
+
+function question01(n) {
+  for (let i = 1; i <= n; i += 1) {
+    // CONCATENANDO STRINGS
+    newSymbol += symbol;
+  }
+  for (let i = 1; i <= n; i += 1) {
+    console.log(newSymbol);
   }
 }
-// RETORNANDO MEU OBJETO COM AS KEYS E VALORES RESPECTIVOS DE QUANTAS VZS SE REPETEM NO ARRAY;
-console.log(object);
-
-for (let i in object) {
-  arrayObject.push(i);
-}
-// RETORNANDO APENAS AS KEYS DO MEU OBJETO EM ORDEM CRESCENTE
-console.log(arrayObject);
-
-let highestKey = 0;
-
-for (let key in object) {
-  if(object[key] > highestKey) {
-    highestKey = key;
-  }
-}
-console.log(highestKey, object[highestKey]);
+question01(5);
