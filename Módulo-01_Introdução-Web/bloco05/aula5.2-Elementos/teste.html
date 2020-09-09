@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AULA 5.2</title>
+  </head>
+  <body>
+    <div id="paiDoPai">
+      <div id="pai">
+        <div id="primeiroFilho"></div>
+
+        <div id="elementoOndeVoceEsta">
+          <div id="primeiroFilhoDoFilho"></div>
+          <div id="segundoEUltimoFilhoDoFilho"></div>
+        </div>
+
+        <div>Atenção!</div>
+
+        <div id="terceiroFilho">oi</div>
+
+        <div id="quartoEUltimoFilho"></div>
+      </div>
+    </div>
+
+    <script>
+      
+      let div1 = document.querySelector("#elementoOndeVoceEsta").parentNode
+      div1.style.color = "green"
+      
+      let div2 = document.querySelector("#primeiroFilhoDoFilho")
+      div2.innerText = "Primeiro Filho do Filho"
+
+      let div3 = document.querySelector("#pai").firstChild
+
+      let div4 = document.querySelector("#elementoOndeVoceEsta").parentNode
+
+      let div5 = document.querySelector("#elementoOndeVoceEsta").parentNode.childNodes;
+      div5[5].style.color = "red"
+  
+      let div6 = document.querySelector("#elementoOndeVoceEsta").parentNode.childNodes;
+      div6[7].innerText = "Terceiro Filho"
+
+      let div7 = document.querySelector("#pai").childNodes
+      div7[7].style.color = "blue"
+    </script>
+  </body>
+</html>
