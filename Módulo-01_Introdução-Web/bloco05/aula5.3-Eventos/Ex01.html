@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 5.3</title>
+</head>
+<body>
+  
+ <h1> Mad Libs </h1>
+ 
+ <ul>
+  <li> Substantivo: <input type = "text" id = "noun">
+  <li> Adjetivo: <input type = "text" id = "adjective">
+  <li> Nome de alguém: <input type = "text" id = "person">
+ </ul>
+ 
+ <button id = "lib-button"> Libere! </button>
+  
+ <div id = "story"> </div>
+ 
+ <script>
+   const button = document.getElementById("lib-button");
+  const noun = document.getElementById("noun");
+  const adjective = document.getElementById("adjective");
+  const name = document.getElementById("person");
+  const answer = document.getElementById("story");
+
+   button.addEventListener("click",makeMadLib);
+
+   function makeMadLib () {
+      answer.innerText = `Existia um guerreiro chamado ${name.value}, que era ${adjective.value} e só queria um ${noun.value}!`;
+   }
+ </script>
+
+</body>
+</html>
