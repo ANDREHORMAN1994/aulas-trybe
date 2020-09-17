@@ -1,0 +1,84 @@
+<! DOCTYPE html> 
+<html> 
+<head> 
+<meta charset = utf-8 /> 
+<title> Calculadora </title> 
+</head> 
+<body> 
+
+  <label> Quadrado este número: 
+    <input type = "number" id = "square-input" size = "2"> 
+  </label> 
+  <button id = "square-button"> Calcular </button> 
+  <br> <br> 
+  
+  <label> Metade desse número: 
+    <input type = "number"id ="half-input"size ="2"> 
+  </label> 
+  <button id ="half-button"> Calcular </button> 
+  <br> <br> 
+  
+  <label> 
+    Fração:
+    <input type = "number" id = "percent1-input" size = "2"> 
+  </label> 
+  <label> 
+    Inteiro:
+    <input type = "number" id = "percent2-input" size = "2"> 
+  </label> 
+  <button id = "percent-button"> Calcular </button> 
+  <br> <br> 
+  
+  <label> Calcular área do círculo com raio: 
+    <input type = "number" id = "area-input" size = "2"> 
+  </label> 
+  <button id = "area-button"> Calcular </button> 
+  <br> <br> 
+  <div id = "solution"> </div> 
+
+  <script>
+    const squareButton = document.getElementById("square-button");
+    const valueSquare = document.getElementById("square-input");
+    const solution = document.getElementById("solution");
+
+    squareButton.addEventListener("click",squareNumber);
+
+    function squareNumber (){
+      let result = valueSquare.value * valueSquare.value;
+      solution.innerText = `O valor de ${valueSquare.value}² é ${result}`;
+    }
+
+    const halfButton = document.getElementById("half-button");
+    const valueHalf = document.getElementById("half-input");
+
+    halfButton.addEventListener("click",halfNumber)
+
+    function halfNumber () {
+      let result = valueHalf.value / 2;
+      solution.innerText = `A metade de ${valueHalf.value} é ${result}`;
+    }
+
+    const percentButton = document.getElementById("percent-button");
+    const valuePercent = document.getElementById("percent1-input");
+    const valueInt = document.getElementById("percent2-input");
+
+    percentButton.addEventListener("click",percentOf);
+    
+    function percentOf () {
+      let result = (valuePercent.value / 100) * valueInt.value;
+      solution.innerText = `${valuePercent.value}% de ${valueInt.value} é ${result}`;
+    }
+
+    const areaButton = document.getElementById("area-button");
+    const valueArea = document.getElementById("area-input");
+
+    areaButton.addEventListener("click",areaOfCircle);
+
+    function areaOfCircle () {
+      let result = (valueArea.value * valueArea.value) * Math.PI;
+      solution.innerText = `A área do circulo com raio ${valueArea.value} é igual a ${result.toFixed(2)}`;
+    }
+  </script>
+  
+</body> 
+</html>

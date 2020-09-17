@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+  </head>
+  <body>
+    <img
+      id="cat"
+      style="position: absolute"
+      src="http://www.anniemation.com/clip_art/images/cat-walk.gif"
+    />
+
+    <script>
+      const imgCat = document.querySelector("#cat");
+
+      imgCat.style.left = "0px";
+      let walking = true;
+
+      function frontAndBack() {
+        let currentLeft = parseInt(imgCat.style.left);
+        let middle = window.innerWidth / 2;
+
+        // if (currentLeft == middle) {
+        //   window.setInterval(changeImg, 2000);
+        // }
+
+        // if (currentLeft > 600 || currentLeft < 300) {
+        //   imgCat.src =
+        //     "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+        // }
+
+        if (
+          walking == true &&
+          currentLeft >= window.innerWidth - imgCat.width
+        ) {
+          walking = false;
+        } else if (walking == false && currentLeft <= 0) {
+          walking = true;
+        }
+
+        if (walking) {
+          imgCat.style.left = currentLeft + 10 + "px";
+        } else if (!walking) {
+          imgCat.style.left = currentLeft - 10 + "px";
+        }
+      }
+
+      window.setInterval(frontAndBack, 50);
+
+      function changeImg() {
+        let currentLeft = parseInt(imgCat.style.left);
+        let middle = window.innerWidth / 2;
+
+        if (currentLeft == middle) {
+
+        imgCat.src =
+          "https://webstockreview.net/images/cat-clipart-animation-1.gif";
+        // currentLeft = middle;
+        imgCat.style.width = "200px";
+
+        }
+      }
+
+      window.setTimeout(changeImg,2000);
+    </script>
+  </body>
+</html>
