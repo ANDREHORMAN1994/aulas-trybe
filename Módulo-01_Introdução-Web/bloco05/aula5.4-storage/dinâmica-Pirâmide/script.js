@@ -1,8 +1,8 @@
 window.onload = function() {
   let basePyramid = 9;
-  let numberOfLines = (basePyramid + 1) / 2; // 5
-  let controlLeft = numberOfLines; // 5
-  let controlRight = numberOfLines; // 5
+  let middle = (basePyramid + 1) / 2; // 5
+  let controlLeft = middle; // 5
+  let controlRight = middle; // 5
   let lines = document.querySelectorAll(".line");
 
   updateVisit();
