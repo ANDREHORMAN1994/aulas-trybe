@@ -2,6 +2,7 @@ window.onload = function () {
   createOptions();
   valueData();
   clickButton();
+  clear();
 };
 
 const selectStates = document.querySelector("#estado");
@@ -87,8 +88,8 @@ function valueData() {
   });
 }
 
-const buttonSubmit = document.querySelector(".button-submit");
-const field = document.querySelector(".information-user");
+const buttonSubmit = document.querySelector("#button-submit");
+const field = document.querySelector("#information-user");
 
 const name = document.querySelector("#nome");
 const street = document.querySelector("#email");
@@ -105,22 +106,23 @@ function clickButton() {
   buttonSubmit.addEventListener("click", function (event) {
     event.preventDefault();
 
-    field.innerHTML += `Seu ${name.name} é ${name.value}<br>`;
-    field.innerHTML += `Seu ${street.name} é ${street.value}<br>`;
-    field.innerHTML += `Seu ${cpf.name} é ${cpf.value}<br>`;
-    field.innerHTML += `Seu ${address.name} é ${street.value}<br>`;
-    field.innerHTML += `Sua ${city.name} é ${city.value}<br>`;
-    field.innerHTML += `Sua moradia é ${radio.value}<br>`;
-    field.innerHTML += `Seu ${curriculum.name} é ${curriculum.value}<br>`;
-    field.innerHTML += `Seu ${job.name} é ${job.value}<br>`;
-    field.innerHTML += `Descrição do cargo é ${descriptionJob.value}<br>`;
-    field.innerHTML += `Sua data é ${data.value}<br>`;
+      field.innerHTML = "";
+      field.innerHTML += `Seu ${name.name} é ${name.value}<br>`;
+      field.innerHTML += `Seu ${street.name} é ${street.value}<br>`;
+      field.innerHTML += `Seu ${cpf.name} é ${cpf.value}<br>`;
+      field.innerHTML += `Seu ${address.name} é ${street.value}<br>`;
+      field.innerHTML += `Sua ${city.name} é ${city.value}<br>`;
+      field.innerHTML += `Sua moradia é ${radio.value}<br>`;
+      field.innerHTML += `Seu ${curriculum.name} é ${curriculum.value}<br>`;
+      field.innerHTML += `Seu ${job.name} é ${job.value}<br>`;
+      field.innerHTML += `Descrição do cargo é ${descriptionJob.value}<br>`;
+      field.innerHTML += `Sua data é ${data.value}<br>`;
     
   });
   // console.log(name.name);
 }
 
-const buttonClear = document.querySelector(".clear-fields");
+const buttonClear = document.querySelector("#clear-fields");
 
 function clear () {
   buttonClear.addEventListener("click", function () {
@@ -129,7 +131,7 @@ function clear () {
     cpf.value = "";
     address.value = "";
     city.value = "";
-    radio.value = "";
+    selectStates.children[0].selected = "selected";
     curriculum.value = "";
     job.value = ""; 
     descriptionJob.value = "";
@@ -137,3 +139,4 @@ function clear () {
     field.innerHTML = "";
   })
 }
+

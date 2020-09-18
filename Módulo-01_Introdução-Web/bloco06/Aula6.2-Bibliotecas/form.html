@@ -1,166 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AULA 6.1</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <form action="" method="GET" autocomplete="on">
-      <fieldset class="items-user">
-        <div>
-          <label for="nome"
-            >Nome
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              maxlength="40"
-              required="required"
-            />
-          </label>
-        </div>
 
-        <div>
-          <label for="email"
-            >E-mail
-            <input
-              type="text"
-              name="email"
-              id="email"
-              maxlength="50"
-              required="required"
-            />
-          </label>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AULA 6.1</title>
+  <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.min.css" />
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+</head>
 
-        <div>
-          <label for="cpf"
-            >CPF
-            <input
-              type="text"
-              name="cpf"
-              id="cpf"
-              maxlength="11"
-              required="required"
-            />
-          </label>
-        </div>
+<body>
+  <form action="" method="GET" autocomplete="on">
+    <div class="field">
+      <label for="nome" class="label is-large">Nome </label>
+      <div class="control">
+        <input type="text" name="nome" id="nome" maxlength="40" required="required" class="input" />
+      </div>
+    </div>
 
-        <div>
-          <label for="endereço"
-            >Endereço
-            <input
-              type="text"
-              name="endereço"
-              id="endereço"
-              maxlength="200"
-              required="required"
-            />
-          </label>
-        </div>
+    <div class="field">
+      <label for="email" class="label is-large">E-mail </label>
+      <div class="control">
+        <input type="text" name="email" id="email" maxlength="50" required="required" class="input" />
+      </div>
+    </div>
 
-        <div>
-          <label for="cidade"
-            >Cidade
-            <input
-              type="text"
-              name="cidade"
-              id="cidade"
-              maxlength="28"
-              required="required"
-            />
-          </label>
-        </div>
+    <div class="field">
+      <label for="cpf" class="label is-large">CPF </label>
+      <div class="control">
+        <input type="text" name="cpf" id="cpf" maxlength="11" required="required" class="input" />
+      </div>
+    </div>
 
-        <div>
-          <label for="estado"
-            >Estado
-            <select name="estado" id="estado" required="required"></select>
-          </label>
-        </div>
+    <div class="field">
+      <label for="endereço" class="label is-large">Endereço </label>
+      <div class="control">
+        <input type="text" name="endereço" id="endereço" maxlength="200" required="required" class="input" />
+      </div>
+    </div>
 
-        <div>
-          <label for="radioButton1">
-            <input
-              type="radio"
-              name="radioButton"
-              value="Casa"
-              id="radioButton1"
-              required="required"
-            />Casa
-          </label>
-          <label for="radioButton2">
-            <input
-              type="radio"
-              name="radioButton"
-              value="Apartamento"
-              id="radioButton2"
-              required="required"
-            />Apartamento
-          </label>
-        </div>
-      </fieldset>
+    <div class="field">
+      <label for="cidade" class="label is-large">Cidade </label>
+      <div class="control">
+        <input type="text" name="cidade" id="cidade" maxlength="28" required="required" class="input" />
+      </div>
+    </div>
 
-      <fieldset class="items-user">
-        <div>
-          <label for="currículo"
-            >Resumo do currículo
-            <textarea
-              name="resumo currículo"
-              id="currículo"
-              cols="30"
-              rows="10"
-              maxlength="1000"
-              required="required"
-            ></textarea>
-          </label>
+    <div class="field">
+      <div class="control">
+        <label for="estado" class="label is-large">Estado </label>
+        <div class="select is-danger is-rounded is-medium">
+          <select name="estado" id="estado" required="required"></select>
         </div>
+      </div>
+    </div>
 
-        <div>
-          <label for="cargo"
-            >Cargo
-            <input
-              type="text"
-              name="cargo"
-              id="cargo"
-              maxlength="40"
-              required="required"
-            />
-          </label>
-        </div>
+    <div class="field">
+      <div class="control">
 
-        <div>
-          <label for="descrição"
-            >Descrição do cargo
-            <input
-              type="text"
-              name="descriçãoCargo"
-              id="descrição"
-              maxlength="500"
-              required="required"
-            />
-          </label>
-        </div>
+        <label for="radioButton1" class="radio">
+          <input type="radio" name="radioButton" value="Casa" id="radioButton1" required="required" />
+          Casa</label>
 
-        <div>
-          <label for="dataInicio"
-            >Data de início
-            <input
-              type="text"
-              name="dataInicio"
-              id="dataInicio"
-              required="required"
-            />/
-          </label>
-        </div>
-      </fieldset>
+        <label for="radioButton2" class="radio">
+          <input type="radio" name="radioButton" value="Apartamento" id="radioButton2" required="required" />
+          Apartamento</label>
 
-      <button type="submit" class="button-submit">ENVIAR</button>
-      <button type="submit" class="clear-fields">LIMPAR</button>
-    </form>
-    <div class="information-user"></div>
-    <script src="./script.js"></script>
-  </body>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="currículo" class="label is-large">Resumo do currículo </label>
+      <div class="control is-large is-loading">
+        <textarea name="resumo currículo" id="currículo" cols="10" rows="3" maxlength="1000" required="required"
+          class="textarea is-danger is-large" placeholder="Escreva aqui seu resumo profissional"></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="cargo" class="label is-large">Cargo </label>
+      <div class="control">
+        <input type="text" name="cargo" id="cargo" maxlength="40" required="required" class="input" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="descrição" class="label is-large">Descrição do cargo </label>
+      <div class="control">
+        <input type="text" name="descriçãoCargo" id="descrição" maxlength="500" required="required" class="input" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="dataInicio" class="label is-large">Data de início </label>
+      <div class="control">
+        <input type="text" name="dataInicio" id="dataInicio" required="required" class="input" />/
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <button type="submit" id="button-submit" class="button is-danger is-rounded">ENVIAR</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="field">
+    <div class="control">
+      <button id="clear-fields" class="button is-danger is-rounded">LIMPAR</button>
+    </div>
+  </div>
+
+  <div id="information-user"></div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
