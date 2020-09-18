@@ -1,0 +1,8 @@
+fieldset {
+  margin: 20px;
+}
+
+.items-user label {
+  display: block;
+  margin: 20px;
+}
