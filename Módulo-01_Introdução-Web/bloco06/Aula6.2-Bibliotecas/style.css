@@ -1,8 +1,125 @@
-fieldset {
+body {
+  background-color: rgba(0, 68, 255, 0.034);
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+.my-header {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.element-header1 {
+  background-color: rgba(0, 68, 255, 0.082);
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.element-header1 .title {
+  color: black;
+}
+
+/* .element-header2 {
+  background-color: rgba(0, 0, 0, 0.151);
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  border-radius: 50px;
+} */
+
+.element-header2 .subtitle {
+  color: black;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.form {
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.select-states {
+  display: inline-block;
+}
+
+.select-container {
+  margin: 40px 20px 20px 20px;
+  text-align: center;
+}
+
+.sub-label-container {
+  margin-top: 8px;
+}
+
+.sub-select-container {
+  margin: 0 20px;
+}
+
+.sub-container-radio {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.container-radio {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.option-element {
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+}
+
+.input-data {
+  width: 200px;
+  margin: auto;
+}
+
+.container-data {
+  text-align: center;
+  margin: auto;
+  /* background-color: blue; */
+  width: 200px;
+}
+
+.subcontainer-buttons {
+  display: inline-block;
   margin: 20px;
 }
 
-.items-user label {
-  display: block;
-  margin: 20px;
+.container-buttons {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin: 50px auto 50px auto;
+  width: 500px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.subcontainer-buttons-elemtents {
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.container-resume {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container-resume-elements {
+  font-size: 30px;
+  background-color: rgba(241, 242, 245, 0.404);
+  width: 80%;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
 }

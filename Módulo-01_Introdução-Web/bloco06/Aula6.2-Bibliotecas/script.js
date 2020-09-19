@@ -40,6 +40,8 @@ function createOptions() {
   for (let i in object) {
     let options = document.createElement("option");
     options.innerText = object[i];
+    options.style.display = "block";
+    options.classList.add("option-element");
     selectStates.appendChild(options);
   }
   // console.log(Object.keys(object).length)
@@ -47,6 +49,7 @@ function createOptions() {
   let options = document.createElement("option");
   options.innerText = "Selecione seu Estado";
   options.selected = "selected";
+  options.classList.add("option-element");
   selectStates.appendChild(options);
   selectStates.insertBefore(options, selectStates.firstChild);
 }
