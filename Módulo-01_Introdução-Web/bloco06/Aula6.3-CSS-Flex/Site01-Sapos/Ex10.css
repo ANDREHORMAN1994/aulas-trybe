@@ -1,0 +1,13 @@
+/* FLEXBOX FROGGY
+https://flexboxfroggy.com/
+
+Ajude as rãs a pegar seus próprios nenúfares. Embora pareçam próximos, vai demorar tanto flex-directione justify-contentpara levá-los lá.
+
+Observe que, ao definir a direção para uma linha ou coluna invertida, o início e o fim também são invertidos.
+*/
+
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
