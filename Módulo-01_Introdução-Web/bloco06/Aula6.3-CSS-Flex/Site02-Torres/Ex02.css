@@ -1,0 +1,18 @@
+/* Flexbox Defense
+http://www.flexboxdefense.com/
+
+Use justify-content ▾ para mover suas torres para a posição.
+*/
+
+.torre-grupo-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.torre-grupo-2 {
+  display: flex;
+  justify-content: center;
+}
+.torre-grupo-3 {
+  display: flex;
+  justify-content: flex-end;
+}
