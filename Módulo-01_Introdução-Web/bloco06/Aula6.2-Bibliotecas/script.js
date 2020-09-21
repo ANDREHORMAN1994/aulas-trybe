@@ -1,6 +1,6 @@
 window.onload = function () {
   createOptions();
-  valueData();
+  // valueData();
   clickButton();
   clear();
 };
@@ -55,41 +55,42 @@ function createOptions() {
 }
 
 const inputData = document.getElementById("dataInicio");
+inputData.DatePickerX.init({format:'dd/mm/yyyy'});
 
-function valueData() {
-  inputData.placeholder = "dd/mm/aa";
-  inputData.style.textAlign = "center";
-  // let inputData.value = inputData.value.split("");
+// function valueData() {
+//   inputData.placeholder = "dd/mm/aa";
+//   inputData.style.textAlign = "center";
+//   // let inputData.value = inputData.value.split("");
 
-  inputData.addEventListener("change", function () {
-    if (
-      inputData.value[2] !== "/" ||
-      inputData.value[5] !== "/" ||
-      inputData.value.length !== 10
-    ) {
-      alert("Data com formato inválido!!");
-    } else if (
-      inputData.value[0] + inputData.value[1] <= 0 ||
-      inputData.value[0] + inputData.value[1] > 31
-    ) {
-      alert("Data com formato inválido!!");
-    } else if (
-      inputData.value[3] + inputData.value[4] <= 0 ||
-      inputData.value[3] + inputData.value[4] > 12
-    ) {
-      alert("Data com formato inválido!!");
-    } else if (
-      inputData.value[6] +
-        inputData.value[7] +
-        inputData.value[8] +
-        inputData.value[9] <=
-      0
-    ) {
-      alert("Data com formato inválido!!");
-    }
-    // console.log(inputData.value.length);
-  });
-}
+//   inputData.addEventListener("change", function () {
+//     if (
+//       inputData.value[2] !== "/" ||
+//       inputData.value[5] !== "/" ||
+//       inputData.value.length !== 10
+//     ) {
+//       alert("Data com formato inválido!!");
+//     } else if (
+//       inputData.value[0] + inputData.value[1] <= 0 ||
+//       inputData.value[0] + inputData.value[1] > 31
+//     ) {
+//       alert("Data com formato inválido!!");
+//     } else if (
+//       inputData.value[3] + inputData.value[4] <= 0 ||
+//       inputData.value[3] + inputData.value[4] > 12
+//     ) {
+//       alert("Data com formato inválido!!");
+//     } else if (
+//       inputData.value[6] +
+//         inputData.value[7] +
+//         inputData.value[8] +
+//         inputData.value[9] <=
+//       0
+//     ) {
+//       alert("Data com formato inválido!!");
+//     }
+//     // console.log(inputData.value.length);
+//   });
+// }
 
 const buttonSubmit = document.querySelector("#button-submit");
 const field = document.querySelector("#information-user");

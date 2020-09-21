@@ -98,10 +98,10 @@ body {
 
 .container-buttons {
   text-align: center;
-  background-color: rgb(255, 255, 255);
-  margin: 50px auto 50px auto;
+  /* background-color: rgb(255, 255, 255); */
+  margin: 50px auto 20px auto;
   width: 500px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315);
+  /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.315); */
 }
 
 .subcontainer-buttons-elemtents {

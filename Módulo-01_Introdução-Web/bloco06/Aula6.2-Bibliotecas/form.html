@@ -7,6 +7,7 @@
   <title>AULA 6.1</title>
   <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./DatePickerX-master/dist/css/DatePickerX.min.css">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
         </div>
       </div>
     </div>
-    <br>
+    
     <div class="field container-radio">
       <div class="control">
 
@@ -111,18 +112,17 @@
       </div>
     </div>
 
+    <section class="container-buttons">
+      <div class="block subcontainer-buttons">
+        <button type="submit" id="button-submit"
+          class="button is-danger is-rounded subcontainer-buttons-elemtents">ENVIAR</button>
+      </div>
+  
+      <div class="block subcontainer-buttons">
+        <button id="clear-fields" class="button is-danger is-rounded subcontainer-buttons-elemtents">LIMPAR</button>
+      </div>
+    </section>
   </form>
-
-  <section class="box container-buttons">
-    <div class="block subcontainer-buttons">
-      <button type="submit" id="button-submit"
-        class="button is-danger is-rounded subcontainer-buttons-elemtents">ENVIAR</button>
-    </div>
-
-    <div class="block subcontainer-buttons">
-      <button id="clear-fields" class="button is-danger is-rounded subcontainer-buttons-elemtents">LIMPAR</button>
-    </div>
-  </section>
 
   <section class="box container-resume">
     <header class="block">
@@ -131,6 +131,7 @@
     <div id="information-user" class="container-resume-elements"></div>
   </section>
 
+  <script src="./DatePickerX-master/dist/js/DatePickerX.min.js"></script>
   <script src="./script.js"></script>
 </body>
 
