@@ -1,0 +1,10 @@
+/* Flexbox Defense
+http://www.flexboxdefense.com/
+
+Use a propriedade justify-content ▾ para mover essas duas torres para a posição. Clique no botão na folha de estilo para um lembrete de como a propriedade funciona. 
+*/
+
+.torre-grupo-1 {
+display: flex;
+justify-content: center;
+}
