@@ -7,4 +7,4 @@ Use justify-content ▾ and align-items ▾ to move your towers into position.
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  }
