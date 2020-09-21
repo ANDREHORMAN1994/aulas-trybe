@@ -1,0 +1,11 @@
+/* FLEXBOX FROGGY
+https://flexboxfroggy.com/
+
+Conduza o sapo para o centro da lagoa usando uma combinação de justify-contente align-items.
+*/
+
+#pond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
