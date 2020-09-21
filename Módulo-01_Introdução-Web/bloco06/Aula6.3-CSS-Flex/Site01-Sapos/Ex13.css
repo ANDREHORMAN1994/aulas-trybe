@@ -1,0 +1,14 @@
+/* FLEXBOX FROGGY
+https://flexboxfroggy.com/
+
+Às vezes, inverter a ordem das linhas ou colunas de um contêiner não é suficiente. Nesses casos, podemos aplicar a orderpropriedade a itens individuais. Por padrão, os itens têm um valor de 0, mas podemos usar essa propriedade para defini-la também como um valor inteiro positivo ou negativo (-2, -1, 0, 1, 2).
+
+Use a orderpropriedade para reordenar as rãs de acordo com seus nenúfares.
+*/
+
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+}
