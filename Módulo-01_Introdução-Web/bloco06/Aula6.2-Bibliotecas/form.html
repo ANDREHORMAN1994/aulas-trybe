@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AULA 6.1</title>
+  <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./DatePickerX-master/dist/css/DatePickerX.min.css">
+</head>
+
+<body>
+
+  <header class="box my-header">
+    <div class="block element-header1">
+      <h1 class="title is-1 ">MEU FORMULÁRIO</h1>
+    </div>
+    <div class="element-header2">
+      <p class="subtitle is-3">Preencha com seus dados</p>
+    </div>
+  </header>
+
+  <form action="" method="GET" autocomplete="on" class="box form">
+    <div class="field">
+      <label for="nome" class="label is-large">Nome </label>
+      <div class="control">
+        <input type="text" name="nome" id="nome" maxlength="40" required="required" class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="email" class="label is-large">E-mail </label>
+      <div class="control">
+        <input type="text" name="email" id="email" maxlength="50" required="required" class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="cpf" class="label is-large">CPF </label>
+      <div class="control">
+        <input type="text" name="cpf" id="cpf" maxlength="11" required="required" class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="endereço" class="label is-large">Endereço </label>
+      <div class="control">
+        <input type="text" name="endereço" id="endereço" maxlength="200" required="required" class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="cidade" class="label is-large">Cidade </label>
+      <div class="control">
+        <input type="text" name="cidade" id="cidade" maxlength="28" required="required" class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field select-container">
+      <div class="control">
+        <label for="estado" class="label is-large select-states sub-label-container">Estado </label>
+        <div class="select is-danger is-rounded is-medium sub-select-container">
+          <select name="estado" id="estado" required="required" class="select-states"></select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="field container-radio">
+      <div class="control">
+
+        <p class="label is-large">Qual sua moradia?</p>
+
+        <label for="radioButton1" class="radio sub-container-radio">
+          <input type="radio" name="radioButton" value="Casa" id="radioButton1" required="required" />
+          Casa</label>
+
+        <label for="radioButton2" class="radio sub-container-radio">
+          <input type="radio" name="radioButton" value="Apartamento" id="radioButton2" required="required" />
+          Apartamento</label>
+
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="currículo" class="label is-large">Resumo do currículo </label>
+      <div class="control is-large is-loading">
+        <textarea name="resumo currículo" id="currículo" cols="10" rows="3" maxlength="1000" required="required"
+          class="textarea is-danger is-large" placeholder="Escreva aqui seu resumo profissional"></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="cargo" class="label is-large">Cargo </label>
+      <div class="control">
+        <input type="text" name="cargo" id="cargo" maxlength="40" required="required" class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="descrição" class="label is-large">Descrição do cargo </label>
+      <div class="control">
+        <input type="text" name="descriçãoCargo" id="descrição" maxlength="500" required="required"
+          class="input is-danger" />
+      </div>
+    </div>
+
+    <div class="field container-data">
+      <label for="dataInicio" class="label is-large">Data de início </label>
+      <div class="control">
+        <input type="text" name="dataInicio" id="dataInicio" required="required" class="input is-danger input-data" />
+      </div>
+    </div>
+
+    <section class="container-buttons">
+      <div class="block subcontainer-buttons">
+        <button type="submit" id="button-submit"
+          class="button is-danger is-rounded subcontainer-buttons-elemtents">ENVIAR</button>
+      </div>
+  
+      <div class="block subcontainer-buttons">
+        <button id="clear-fields" class="button is-danger is-rounded subcontainer-buttons-elemtents">LIMPAR</button>
+      </div>
+    </section>
+  </form>
+
+  <section class="box container-resume">
+    <header class="block">
+      <h1 class="title is-1">RESUMO DAS INFORMAÇÕES</h1>
+    </header>
+    <div id="information-user" class="container-resume-elements"></div>
+  </section>
+
+  <script src="./DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
