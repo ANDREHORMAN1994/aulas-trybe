@@ -1,0 +1,11 @@
+/* FLEXBOX FROGGY
+https://flexboxfroggy.com/
+
+Os sapos precisam cruzar o lago novamente, desta vez para alguns nenúfares com bastante espaço ao redor deles. Usando uma combinação de justify-contente align-items.
+*/
+
+#pond {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}

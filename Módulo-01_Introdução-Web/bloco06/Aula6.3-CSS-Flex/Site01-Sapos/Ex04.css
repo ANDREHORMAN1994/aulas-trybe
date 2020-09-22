@@ -1,0 +1,10 @@
+/* FLEXBOX FROGGY
+https://flexboxfroggy.com/
+
+Agora, os nenúfares nas bordas foram levados para a costa, aumentando o espaço entre eles. Use justify-content. Desta vez, os nenúfares têm espaçamento igual entre eles.
+*/
+
+#pond {
+  display: flex;
+  justify-content: space-between
+}

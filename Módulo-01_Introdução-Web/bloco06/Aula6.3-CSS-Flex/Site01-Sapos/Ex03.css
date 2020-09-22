@@ -1,0 +1,12 @@
+/* FLEXBOX FROGGY
+https://flexboxfroggy.com/
+
+Ajude os três sapos a encontrar seus nenúfares apenas usando justify-content. Desta vez, os nenúfares têm muito espaço ao seu redor.
+
+Se você se esquecer dos valores possíveis para uma propriedade, passe o mouse sobre o nome da propriedade para visualizá-los. Experimente pairar sobre justify-content.
+*/
+
+#pond {
+  display: flex;
+  justify-content: space-around
+}
