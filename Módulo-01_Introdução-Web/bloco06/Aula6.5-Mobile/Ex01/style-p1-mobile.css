@@ -1,0 +1,24 @@
+@media screen and (max-width: 560px) {
+  .head-container {
+    width: 100%;
+  }
+
+  .head-container .title {
+    background-color: yellow;
+  }
+
+  .head-container .title h1 {
+    color: black;
+    font-size: 2em;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .head-container {
+    background-color: green;
+  }
+}

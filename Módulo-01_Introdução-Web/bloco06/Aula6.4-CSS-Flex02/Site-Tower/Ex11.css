@@ -1,0 +1,17 @@
+/* Flexbox Defense
+http://www.flexboxdefense.com/ */
+
+/* Use justify-content ▾ and align-self ▾ to move your towers into position. */
+.tower-group-1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.tower-1-2 {
+  align-self: flex-start;
+}
+
+.tower-1-4 {
+  align-self: flex-start;
+}
