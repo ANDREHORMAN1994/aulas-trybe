@@ -1,0 +1,92 @@
+@media screen and (max-width: 400px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: blue;
+  }
+
+  .title {
+    text-align: center;
+    background-color:lightblue;
+    color: darkblue;
+    padding: 20px 0;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
+  .nav-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px;
+  }
+
+  .nav-container ul li {
+    border: 1px solid lightblue;
+    padding: 5px;
+    width: 80px;
+    background-color: black;
+    color: lightcyan;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .aside-container {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .aside-elements {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+    color: black;
+  }
+
+  .aside-elements h2 {
+    text-align: center;
+    margin: 10px
+    ;
+  }
+
+  .aside-container .aside-elements ul {
+    list-style: none;
+  }
+
+  .main-content {
+    background-color: rgb(0, 0, 61);
+    color: white;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .footer-container {
+    background: lightblue;
+    padding: 0px;
+    /* height: 300px; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-subcontainer {
+    margin: 30px 20px;
+    /* background-color: brown; */
+    text-align: center;
+    font-size: 10px;
+  }
+}
