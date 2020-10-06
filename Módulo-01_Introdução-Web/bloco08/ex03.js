@@ -63,33 +63,24 @@ const books = [
   },
 ];
 
-// console.log(books[4].author.name);
+const expected_result = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin',
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991,
+};
 
-// MÉTODO 01 DE USAR FIND
-// function authorBornIn1947() {
-//   return books.find((item) => {
-//     return item.author.name === 'Stephen King';
-//   }).author.name;
-// }
-// console.log(authorBornIn1947());
+const firstBook = (number) => {
+  return books.find((item) => item.name.length === number);
+};
 
-
-// MÉTODO 02 DE USAR FIND
-// const author = (item) => {
-//   return item.author.name === 'Stephen King';
-// };
-
-// function authorBornIn1947() {
-//   return books.find(author).author.name;
-// }
-// console.log(authorBornIn1947());
-
-
-// MÉTODO 03 DE USAR FIND
-function authorBornIn1947() {
-  const result = books.find(({author}) => author.name === 'Stephen King');
-  return result.author.name;
+function getNamedBook() {
+  return firstBook(26);
 }
-console.log(authorBornIn1947());
+console.log(getNamedBook());
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+assert.deepEqual(getNamedBook(), expected_result);

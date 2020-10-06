@@ -7,7 +7,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948,
+      birthYear: 1948
     },
     releaseYear: 1991,
   },
@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947,
+      birthYear: 1947
     },
     releaseYear: 1986,
   },
@@ -63,33 +63,19 @@ const books = [
   },
 ];
 
-// console.log(books[4].author.name);
-
-// MÉTODO 01 DE USAR FIND
-// function authorBornIn1947() {
-//   return books.find((item) => {
-//     return item.author.name === 'Stephen King';
-//   }).author.name;
-// }
-// console.log(authorBornIn1947());
-
-
-// MÉTODO 02 DE USAR FIND
-// const author = (item) => {
-//   return item.author.name === 'Stephen King';
-// };
-
-// function authorBornIn1947() {
-//   return books.find(author).author.name;
-// }
-// console.log(authorBornIn1947());
-
-
-// MÉTODO 03 DE USAR FIND
-function authorBornIn1947() {
-  const result = books.find(({author}) => author.name === 'Stephen King');
-  return result.author.name;
+function smallerName() {
+  let nameBook;
+  let countLetters = books[0].name.length;
+  books.forEach((item) => {
+    if (item.name.length < countLetters) {
+      nameBook = item.name;
+      countLetters = item.name.length;
+    }
+  })
+  return nameBook;
 }
-console.log(authorBornIn1947());
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+console.log(smallerName());
+
+
+assert.equal(smallerName(), 'Duna');
