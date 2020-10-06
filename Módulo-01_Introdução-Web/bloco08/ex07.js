@@ -7,7 +7,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948
+      birthYear: 1948,
     },
     releaseYear: 1991,
   },
@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -63,13 +63,19 @@ const books = [
   },
 ];
 
-const expected_result = false
+const expected_result = false;
 
-function everyoneWasBornOnSecXX() {
-  return books.every((item) => {
-    return item.author.birthYear > 1900 && item.author.birthYear <= 2000;
-  })
+function authorUnique() {
+  let message = true;
+  books.forEach((item) => {
+    books.forEach((item2) => {
+      if (item2.author.birthYear === item.author.birthYear && item2.id !== item.id) {
+        message = false;
+      }
+    });
+  });
+  return message;
 }
-console.log (everyoneWasBornOnSecXX());
+console.log(authorUnique());
 
-assert.equal(everyoneWasBornOnSecXX(), expected_result);
+assert.equal(authorUnique(), expected_result);
