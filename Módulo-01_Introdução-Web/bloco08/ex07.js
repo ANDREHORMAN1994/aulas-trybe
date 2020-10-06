@@ -78,4 +78,16 @@ function authorUnique() {
 }
 console.log(authorUnique());
 
+// function authorUnique() {
+//   let message = true;
+//   for (i in books) {
+//     books.forEach((item) => {
+//       if (item.author.birthYear === books[i].author.birthYear && item.id !== books[i].id) {
+//         message = false;
+//       }
+//     });
+//   };
+//   return message;
+// }
+
 assert.equal(authorUnique(), expected_result);
