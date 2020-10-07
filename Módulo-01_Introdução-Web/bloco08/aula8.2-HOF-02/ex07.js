@@ -7,19 +7,9 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948
+      birthYear: 1948,
     },
     releaseYear: 1991,
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: {
-      name: 'J. R. R. Tolkien',
-      birthYear: 1892,
-    },
-    releaseYear: 1954,
   },
   {
     id: 3,
@@ -47,7 +37,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -61,16 +51,47 @@ const books = [
     },
     releaseYear: 1928,
   },
+  {
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: {
+      name: 'J. R. R. Tolkien',
+      birthYear: 1892,
+    },
+    releaseYear: 1954,
+  },
 ];
 
 const expected_result = 'O Senhor dos Anéis';
 
 // Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais (terminam com um ponto).
 
+// function authorWith3DotsOnName() {
+//   return books.filter((book) => {
+//     const nameAuthor = book.author.name;
+//     return nameAuthor[1] === '.' && nameAuthor[4] === '.' && nameAuthor[7] === '.';
+//   })[0].name;
+// }
+// console.log(authorWith3DotsOnName());
+
+// function authorWith3DotsOnName() {
+//   return books.filter((book) => {
+//     const nameAuthor = book.author.name.split(' ');
+//     return nameAuthor[0].endsWith('.') && nameAuthor[1].endsWith('.') && nameAuthor[2].endsWith('.');
+//   })[0].name;
+// }
+// console.log(authorWith3DotsOnName());
+
 function authorWith3DotsOnName() {
   return books.filter((book) => {
-    const nameAuthor = book.author.name;
-    return nameAuthor[1] === '.' && nameAuthor[4] === '.' && nameAuthor[7] === '.';
+    let count = 0;
+    book.author.name.split('').forEach((words) => {
+      if (words === '.') {
+        count += 1;
+      }
+    });
+    return count === 3;
   })[0].name;
 }
 console.log(authorWith3DotsOnName());
