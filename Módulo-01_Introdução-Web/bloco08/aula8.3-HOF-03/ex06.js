@@ -1,8 +1,11 @@
-    
 const assert = require('assert');
 
 const alunos = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
-const notas = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+const notas = [
+  [9, 8, 10, 7, 5],
+  [10, 9, 9, 10, 8],
+  [10, 7, 10, 8, 9],
+];
 
 // Agora vamos criar um novo array de objetos a partir das informações abaixo, onde cada objeto terá o formato { name: nome do aluno, average: media das notas }. Para isso vamos assumir que a posição 0 de notas refere-se ao aluno na posição 0 de alunos, aqui além de reduce será necessário utilizar também a função map. Dica: Você pode acessar o index do array dentro de map, e você pode ver o objeto esperado na constante expected.
 
@@ -27,15 +30,15 @@ const notas = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
 
 const media = () => {
   return notas.map((array) => {
-    return console.log(array.reduce((acc, cur) => acc + cur)/array.length);
-  })
-}
-media();
+    return array.reduce((acc, cur) => acc + cur) / array.length;
+  });
+};
+console.log(media());
 
 function studentAverage() {
-  return alunos.map((name) => {
-    return {name: name, average: media};
-  })
+  return alunos.map((name, index) => {
+    return { name: name, average: media()[index] };
+  });
 }
 console.log(studentAverage());
 
@@ -45,4 +48,4 @@ const expected = [
   { name: 'Maria Clara', average: 8.8 },
 ];
 
-// assert.deepEqual(studentAverage(), expected);
+assert.deepEqual(studentAverage(), expected);
