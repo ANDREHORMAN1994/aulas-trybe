@@ -1,11 +1,11 @@
-import Forms01 from './components/ExForms01';
+import Forms from './components/forms';
 import './App.css';
 
 function App() {
 	return (
 		<div className='App'>
       <h1>FORMULÁRIO REACT</h1>
-			<Forms01 />
+			<Forms />
 		</div>
 	);
 }
