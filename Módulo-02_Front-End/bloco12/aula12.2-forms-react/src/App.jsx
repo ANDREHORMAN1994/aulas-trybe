@@ -1,4 +1,5 @@
-import Forms from './components/forms';
+import Forms from './exercícioParaFixar/forms';
+// import Forms from './exercíciosDoDia/forms';
 import './App.css';
 
 function App() {

@@ -28,7 +28,6 @@ class InputText extends React.Component {
 					id='name'
 					value={name}
 					onChange={updateStates}
-					error={true}
 				/>
 				<p>{this.validationName(name)}</p>
 			</div>

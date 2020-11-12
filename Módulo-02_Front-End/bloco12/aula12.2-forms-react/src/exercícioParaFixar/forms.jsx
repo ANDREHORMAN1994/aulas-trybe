@@ -21,12 +21,11 @@ class Forms extends React.Component {
 			otaku: '',
 			watch: false,
 			foto: '',
-			error: false,
 		};
 	}
 
 	updateStates({ target }) {
-		const { type, name, id, value, checked, files, error } = target;
+		const { type, name, id, value, checked, files } = target;
 		let newValue = value;
 		if (type === 'checkbox') newValue = checked;
 		if (type === 'radio') newValue = id;
@@ -35,7 +34,6 @@ class Forms extends React.Component {
 
 		this.setState({
 			[name]: newValue,
-			error: error,
 		});
 	}
 
