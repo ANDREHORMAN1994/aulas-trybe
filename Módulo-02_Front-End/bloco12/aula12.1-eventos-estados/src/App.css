@@ -1,3 +1,26 @@
 .App {
   text-align: center;
 }
+
+.button-element {
+  background-color: blue;
+  color: white;
+  padding: 100px 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px black;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+  outline: none;
+}
+
+.button1 {
+  background-color: red;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: yellow;
+  cursor: pointer;
+}
