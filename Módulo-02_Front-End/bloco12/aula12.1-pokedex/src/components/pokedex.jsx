@@ -7,7 +7,6 @@ class Pokedex extends React.Component {
 
     this.nextPokemon = this.nextPokemon.bind(this);
     this.nextCount = this.nextCount.bind(this);
-    this.resetCount = this.resetCount.bind(this);
 
     const { pokemonList } = this.props;
     this.state = {
@@ -24,28 +23,19 @@ class Pokedex extends React.Component {
     });
   }
 
-  resetCount() {
-    const { pokemonList } = this.props;
-
-    if (this.state.count === pokemonList.length - 1) {
-      this.setState({
-        count: 0,
-      });
-    }
-  }
-
   nextCount() {
     const { pokemonList } = this.props;
 
     this.setState(
       (previousElement) => ({
-        count: previousElement.count + 1,
+        count:
+          previousElement.count >= pokemonList.length - 1
+            ? 0
+            : previousElement.count + 1,
       }),
       () => {
         this.nextPokemon();
-        this.resetCount();
         console.log(this.state.count);
-        console.log(pokemonList[this.state.count].id);
       },
     );
   }
