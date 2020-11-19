@@ -1,25 +1,47 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Image from './components/photo';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.fetchPhotoDog = this.fetchPhotoDog.bind(this);
+    this.loading = this.loading.bind(this);
+
+    this.state = {
+      objectDogPhoto: undefined,
+    };
+  }
+
+  async fetchPhotoDog() {
+    const endPoint = 'https://dog.ceo/api/breeds/image/random';
+    const fetchPhoto = await fetch(endPoint);
+    const object = await fetchPhoto.json();
+    console.log(object);
+
+    this.setState({
+      objectDogPhoto: object,
+    });
+  }
+
+  componentDidMount() {
+    this.fetchPhotoDog();
+  }
+
+  loading() {
+    return <p>...LOADING</p>;
+  }
+
+  render() {
+    const { objectDogPhoto } = this.state;
+    return (
+      <div className="App">
+        {objectDogPhoto ? <Image image={objectDogPhoto.message} /> : this.loading()}
+        <button onClick={this.fetchPhotoDog} >Altere a Imagem</button>
+      </div>
+    );
+  }
 }
 
 export default App;
