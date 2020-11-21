@@ -75,7 +75,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    // this.alertRace();
+    if (prevState.objectDogPhoto !== this.state.objectDogPhoto) setTimeout(() => this.alertRace(), 1000);
   }
 
   loading() {
