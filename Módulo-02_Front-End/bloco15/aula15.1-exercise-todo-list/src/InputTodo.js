@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 class InputTodo extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       textTodo: '',
     };
@@ -12,12 +12,12 @@ class InputTodo extends Component {
   }
 
   changeTextTodo(value) {
-    this.setState({ textTodo: value })
+    this.setState({ textTodo: value });
   }
 
   addItem(value, callback) {
-    this.setState({ textTodo: '' })
-    callback(value)
+    this.setState({ textTodo: '' });
+    callback(value);
   }
 
   render() {
@@ -32,7 +32,13 @@ class InputTodo extends Component {
           value={textTodo}
           onChange={(e) => this.changeTextTodo(e.target.value)}
         />
-        <input id="btnAdd" type="button" value="Adicionar" onClick={() => this.addItem(textTodo,addTodo)} />
+        <input
+          id="btnAdd"
+          type="button"
+          value="Adicionar"
+          onClick={() => this.addItem(textTodo, addTodo)}
+          data-testid="id-button-add"
+        />
       </div>
     );
   }
@@ -41,4 +47,8 @@ export default InputTodo;
 
 InputTodo.propTypes = {
   addTodo: PropTypes.func.isRequired,
+};
+
+InputTodo.defaultProps = {
+  addTodo: () => {},
 }
