@@ -1,7 +1,9 @@
 import React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from '../App';
 import InputTodo from '../InputTodo';
+import Item from '../Item';
 
 afterEach(cleanup);
 
@@ -58,3 +60,42 @@ describe('EX01 - Testando funcionalidades do Botão "Adicionar"', () => {
     expect(contentList[0].innerHTML).toBe(result);
   });
 });
+
+describe('EX02 - Testando aparição dos elementos na lita', () => {
+  test('Adição de tarefas já prontas na aplicação.', () => {
+    const arrayTasks = ['estudar', 'trabalhar', 'ficar rico'];
+
+    render(<App />);
+    const inputLabel = screen.getByLabelText('Tarefa:');
+    const button = screen.getByTestId('id-button-add');
+
+    expect(inputLabel).toHaveValue('');
+
+    arrayTasks.forEach((task, index, array) => {
+      userEvent.type(inputLabel, task);
+      fireEvent.click(button);
+
+      const listTask = screen.getAllByTestId('id-content-list');
+      expect(listTask[index]).toHaveTextContent(array[index]);
+    });
+
+    const listTask = screen.getAllByTestId('id-content-list');
+    listTask.forEach((task) => {
+      expect(task).toBeInTheDocument();
+      expect(listTask.includes(task)).toBeTruthy();
+    });
+  });
+
+  test('Teste string no Item para ele aparecer na tela.', () => {
+    render(<Item content="XABLAU" />);
+
+    const task = screen.getByText('XABLAU');
+    expect(task).toBeInTheDocument();
+  })
+});
+
+describe('EX03 - Criar novas funcionalidades', () => {
+  test('Adicionar funcionalidade de selecionar uma task', () => {
+    
+  })
+})
