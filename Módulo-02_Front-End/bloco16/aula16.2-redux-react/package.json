@@ -1,5 +1,5 @@
 {
-  "name": "aula16.1-redux-intro",
+  "name": "aula16.2-redux-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
