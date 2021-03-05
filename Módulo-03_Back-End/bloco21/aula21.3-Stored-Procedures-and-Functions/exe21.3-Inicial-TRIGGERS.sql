@@ -1,3 +1,25 @@
+-- It's Trigger Time
+-- Alright, people! Hora de montar uns triggers.
+-- Considerando as tabelas e os banco de dados abaixo:
+
+CREATE DATABASE IF NOT EXISTS betrybe_automoveis;
+
+USE betrybe_automoveis;
+
+CREATE TABLE carros(
+    id_carro INT PRIMARY KEY auto_increment,
+    preco DECIMAL(12, 2) NOT NULL DEFAULT 0,
+    data_atualizacao DATETIME,
+    acao VARCHAR(15),
+    disponivel_em_estoque BOOLEAN DEFAULT 0
+) engine = InnoDB;
+
+CREATE TABLE log_operacoes(
+    operacao_id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_operacao VARCHAR(15) NOT NULL,
+    data_ocorrido DATE NOT NULL
+) engine = InnoDB;
+
 -- Crie um TRIGGER que, a cada nova inserção feita na tabela carros , defina o valor da coluna data_atualizacao para o momento do ocorrido, a acao para 'INSERÇÃO' e a coluna disponivel_em_estoque para 1 .
 
 USE betrybe_automoveis;
