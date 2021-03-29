@@ -30,7 +30,6 @@ function Fibonacci(num){
     }
 	}
 }
-// console.log(Fibonacci(10));
 
 const calcularFibonacci = () => {
   question.then((data) => {
