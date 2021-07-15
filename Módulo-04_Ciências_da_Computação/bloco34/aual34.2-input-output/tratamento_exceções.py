@@ -1,9 +1,9 @@
-# while True:
-#     try:
-#         number = int(input("Coloque um número aqui: "))
-#         break
-#     except ValueError:
-#         print("Número não é válido")
+while True:
+    try:
+        number = int(input("Coloque um número aqui: "))
+        break
+    except ValueError:
+        print("Número não é válido")
 
 try:
     arquivo = open("meu_nome.txt", "r")
