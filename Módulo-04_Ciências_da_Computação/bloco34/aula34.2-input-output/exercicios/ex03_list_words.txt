@@ -1,0 +1,5 @@
+anime
+musica
+filme
+serie
+jogos
