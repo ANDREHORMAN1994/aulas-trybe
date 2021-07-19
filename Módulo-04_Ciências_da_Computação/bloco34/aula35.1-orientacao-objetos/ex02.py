@@ -42,6 +42,12 @@ class Retangulo(ObjetoGeometria):
         self.base = self.base
         self.altura = self.altura
 
+    def area(self):
+        return self.base * self.altura
+    
+    def perimetro(self):
+        return super().perimetro()
+
 
 if __name__ == "__main__":
     obj_quadrado = Quadrado(5)
