@@ -6,13 +6,9 @@ Estudei o desenvolvimento back-end se aprofundando em MySQL, MongoDB e NodeJS e 
 
 Aprendi sobre `Banco de dados Relacionais e Tabelas`, `Bancos de dados Não Relacionais`, `Documentos e Coleções` e `Back-End em Node.js` .
 
-Sendo Capaz de:
-
-- [ ] _..._;
-
 Tendo isso em mente aqui você encontrará os exercícios que desenvolvi nos dias respectivos,
 para fixar os conhecimentos que adquiri ao longo de cada bloco. 
 
 Além disso, também desenvolvi projetos ao final dos blocos para avaliar tudo o que havia aprendido.
 
-Você pode Acessar meus projetos aqui: [PROJETOS](https://github.com/ANDREHORMAN1994/TRYBE-PROJETOS).
+Você pode Acessar meus projetos aqui: [PROJETOS](https://portfolio-andre-horman.vercel.app/).
