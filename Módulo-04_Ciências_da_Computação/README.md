@@ -6,13 +6,9 @@ Ao longo desse módulo aprendi uma introdução à linguagem de programação Py
 
 Aprendi sobre `Como um Computador é Estruturado`, `Linguagem de Programação Python` e `Estruturar dados para facilitar na Resolução de Problemas` .
 
-Sendo Capaz de:
-
-- [ ] _..._;
-
 Tendo isso em mente aqui você encontrará os exercícios que desenvolvi nos dias respectivos,
 para fixar os conhecimentos que adquiri ao longo de cada bloco. 
 
 Além disso, também desenvolvi projetos ao final dos blocos para avaliar tudo o que havia aprendido.
 
-Você pode Acessar meus projetos aqui: [PROJETOS](https://github.com/ANDREHORMAN1994/TRYBE-PROJETOS).
+Você pode Acessar meus projetos aqui: [PROJETOS](https://portfolio-andre-horman.vercel.app/).
